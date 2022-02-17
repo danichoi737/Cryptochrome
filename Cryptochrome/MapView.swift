@@ -12,11 +12,21 @@ struct MapView: View {
     @StateObject private var locationManager = LocationManager()
 
     var body: some View {
-        Map(coordinateRegion: $locationManager.region, showsUserLocation: true)
-            .accentColor(Color(.systemPink))
-            .ignoresSafeArea(edges: .top)
-            .onAppear {
-                locationManager.checkLocationServicesEnabled()
+        ZStack {
+            Map(coordinateRegion: $locationManager.region, showsUserLocation: true)
+                .accentColor(Color(.systemPink))
+                .ignoresSafeArea(edges: .top)
+                .onAppear {
+                    locationManager.checkLocationServicesEnabled()
+            }
+
+            HStack {
+                Text(locationManager.region.center.latitude.describeAsFixedLengthString())
+                Text(locationManager.region.center.longitude.describeAsFixedLengthString())
+            }
+            .font(.headline)
+            .foregroundColor(.orange)
+            .offset(y: 100)
         }
     }
 }
@@ -68,5 +78,16 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
+    }
+}
+
+extension Double {
+    func describeAsFixedLengthString(integerDigits: Int = 3, fractionDigits: Int = 9) -> String {
+        self.formatted(
+            .number
+                .precision(
+                    .integerAndFractionLength(integer: integerDigits, fraction: fractionDigits)
+                )
+        )
     }
 }
