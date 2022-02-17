@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LocationView: View {
     var body: some View {
-        Text("LocationView")
+        MapView()
     }
 }
 
