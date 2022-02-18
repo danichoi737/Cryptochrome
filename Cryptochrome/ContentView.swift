@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Tab = .dashboard
+    
+    enum Tab {
+        case dashboard
+        case location
+        case motion
+    }
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: $selection) {
+            DashboardView()
+                .tabItem {
+                    Label("Dashboard", systemImage: "rectangle.3.group")
+                }
+                .tag(Tab.dashboard)
+            
+            LocationView()
+                .tabItem {
+                    Label("Location", systemImage: "location")
+                }
+                .tag(Tab.location)
+            
+            MotionView()
+                .tabItem {
+                    Label("Motion", systemImage: "move.3d")
+                }
+                .tag(Tab.motion)
+        }
     }
 }
 
