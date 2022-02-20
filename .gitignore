@@ -8,3 +8,7 @@ xcdebugger/
 
 # User settings
 xcuserdata/
+
+### CocoaPods ###
+Pods/
+*.xcworkspace

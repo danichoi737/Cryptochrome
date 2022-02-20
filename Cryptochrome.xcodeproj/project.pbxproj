@@ -16,9 +16,11 @@
 		33F8936A27BE6E6A00D46FA6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8936927BE6E6A00D46FA6 /* DashboardView.swift */; };
 		33F8936C27BE8CC300D46FA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8936B27BE8CC300D46FA6 /* MapView.swift */; };
 		33F8937027C0666300D46FA6 /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8936F27C0666300D46FA6 /* MotionDetector.swift */; };
+		4A056148400DCEA82F370A24 /* Pods_Cryptochrome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AFFF1523AEE4ADA93DE837 /* Pods_Cryptochrome.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CC5927E4A5923C3DB47A011 /* Pods-Cryptochrome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptochrome.debug.xcconfig"; path = "Target Support Files/Pods-Cryptochrome/Pods-Cryptochrome.debug.xcconfig"; sourceTree = "<group>"; };
 		33593C9727BD38070082F699 /* Cryptochrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptochrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33593C9A27BD38070082F699 /* CryptochromeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptochromeApp.swift; sourceTree = "<group>"; };
 		33593C9C27BD38070082F699 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		33F8936927BE6E6A00D46FA6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		33F8936B27BE8CC300D46FA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		33F8936F27C0666300D46FA6 /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
+		923E0EED25DA8FB860F74826 /* Pods-Cryptochrome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptochrome.release.xcconfig"; path = "Target Support Files/Pods-Cryptochrome/Pods-Cryptochrome.release.xcconfig"; sourceTree = "<group>"; };
+		C6AFFF1523AEE4ADA93DE837 /* Pods_Cryptochrome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptochrome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A056148400DCEA82F370A24 /* Pods_Cryptochrome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				33593C9927BD38070082F699 /* Cryptochrome */,
 				33593C9827BD38070082F699 /* Products */,
+				6666DD0BDE0AE7347C6C2587 /* Pods */,
+				CAF6088C9C2E1615031DD0B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6666DD0BDE0AE7347C6C2587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CC5927E4A5923C3DB47A011 /* Pods-Cryptochrome.debug.xcconfig */,
+				923E0EED25DA8FB860F74826 /* Pods-Cryptochrome.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAF6088C9C2E1615031DD0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6AFFF1523AEE4ADA93DE837 /* Pods_Cryptochrome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33593CA527BD38080082F699 /* Build configuration list for PBXNativeTarget "Cryptochrome" */;
 			buildPhases = (
+				D5FAF68BAC857997EB55EE20 /* [CP] Check Pods Manifest.lock */,
 				33593C9327BD38070082F699 /* Sources */,
 				33593C9427BD38070082F699 /* Frameworks */,
 				33593C9527BD38070082F699 /* Resources */,
+				0062E17A6191A4D2E7468B16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0062E17A6191A4D2E7468B16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptochrome/Pods-Cryptochrome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptochrome/Pods-Cryptochrome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cryptochrome/Pods-Cryptochrome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5FAF68BAC857997EB55EE20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cryptochrome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33593C9327BD38070082F699 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		33593CA627BD38080082F699 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC5927E4A5923C3DB47A011 /* Pods-Cryptochrome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +383,7 @@
 		};
 		33593CA727BD38080082F699 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923E0EED25DA8FB860F74826 /* Pods-Cryptochrome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
