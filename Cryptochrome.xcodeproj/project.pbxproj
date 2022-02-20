@@ -15,6 +15,7 @@
 		33F8936827BE6DF600D46FA6 /* MotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8936727BE6DF600D46FA6 /* MotionView.swift */; };
 		33F8936A27BE6E6A00D46FA6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8936927BE6E6A00D46FA6 /* DashboardView.swift */; };
 		33F8936C27BE8CC300D46FA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8936B27BE8CC300D46FA6 /* MapView.swift */; };
+		33F8937027C0666300D46FA6 /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8936F27C0666300D46FA6 /* MotionDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		33F8936727BE6DF600D46FA6 /* MotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionView.swift; sourceTree = "<group>"; };
 		33F8936927BE6E6A00D46FA6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		33F8936B27BE8CC300D46FA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		33F8936F27C0666300D46FA6 /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				33F8936527BE6DE200D46FA6 /* LocationView.swift */,
 				33F8936B27BE8CC300D46FA6 /* MapView.swift */,
 				33F8936727BE6DF600D46FA6 /* MotionView.swift */,
+				33F8936F27C0666300D46FA6 /* MotionDetector.swift */,
 				33593C9E27BD38080082F699 /* Assets.xcassets */,
 				33593CA027BD38080082F699 /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 				33F8936A27BE6E6A00D46FA6 /* DashboardView.swift in Sources */,
 				33F8936627BE6DE200D46FA6 /* LocationView.swift in Sources */,
 				33593C9B27BD38070082F699 /* CryptochromeApp.swift in Sources */,
+				33F8937027C0666300D46FA6 /* MotionDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
